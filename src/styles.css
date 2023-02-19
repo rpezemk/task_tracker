@@ -41,7 +41,7 @@ body {
 
 .btn-block {
   display: block;
-  width: 100%;
+  width: 70%;
 }
 
 .form-control {
@@ -74,3 +74,6 @@ body {
   flex: 2;
   height: 20px;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

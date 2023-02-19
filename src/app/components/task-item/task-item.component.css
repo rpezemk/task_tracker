@@ -1,0 +1,33 @@
+.task {
+  background: #f4f4f4;
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.task-test  {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.task.reminderEn {
+  border-left: 15px solid red;
+}
+
+.task.reminderDis {
+  border-left: 15px solid green;
+}
+
+
+.task.selected{
+  background-color: gray;
+}
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+<form class="add-form" (ngSubmit)="onSubmit()">
+  <div class="form-control">
+    <label for="text">Task</label>
+    <input type="text"
+           name="text" id="text"
+           [(ngModel)]="text"
+           placeholder="Add Task"/>
+  </div>
+  <div class="form-control">
+    <label for="day">Day</label>
+    <input type="text" name="day"
+           id="day"
+           [(ngModel)]="day"
+           placeholder="Day"/>
+  </div>
+  <div class="form-control-check">
+    <label for="reminder">Set reminder</label>
+    <input type="checkbox"
+           name="reminder"
+           id="reminder"
+           [(ngModel)]="reminder"
+           placeholder="Set reminder"/>
+  </div>
+  {{ 'text: ' + text + ', day: ' + day + ', reminder: ' + reminder }}
+  <input type="submit" value="Save Task" class="btn btn-block">
+  <input type="submit" value="Cancel" class="btn btn-block">
+  <app-my-dp [myDate]="myDate1"></app-my-dp>
+
+</form>

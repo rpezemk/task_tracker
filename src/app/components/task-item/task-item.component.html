@@ -1,3 +1,21 @@
-<div class="dupa">
-  <h3>{{ task.text }}</h3>
+<div
+  [ngClass]="{
+    'reminderEn': task.reminder,
+    'reminderDis': !task.reminder,
+    'selected': selected }"
+  (click)="onToggleSel()"
+  (dblclick)="onToggle(task)"
+  class="task">
+
+
+  <h3 class="task-test">
+    {{ task.text }}
+    <fa-icon
+      (click)="(onDelete(task))"
+      [ngStyle]="{color: 'red'}"
+      [icon]="faTimes" >
+    </fa-icon>
+  </h3>
+  <p>{{ task.day }}</p>
+
 </div>
